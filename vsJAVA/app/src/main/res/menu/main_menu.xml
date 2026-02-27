@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_toggle_format"
+        android:title="切换时间格式"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_toggle_date"
+        android:title="显示/隐藏日期"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_font_size"
+        android:title="字体大小"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_theme"
+        android:title="主题"
+        app:showAsAction="never" />
+</menu>

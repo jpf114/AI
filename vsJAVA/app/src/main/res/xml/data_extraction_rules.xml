@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- No data extraction rules defined, but this file is required for backup functionality. -->
+    </cloud-backup>
+</data-extraction-rules>
