@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+    <!-- 顶部工具栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end|center_vertical"
+        android:padding="8dp">
+
+        <!-- 主题切换按钮 -->
+        <ImageButton
+            android:id="@+id/btnTheme"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_theme"
+            android:contentDescription="切换主题"
+            android:padding="10dp"
+            app:tint="#FF424242" />
+
+        <!-- 统计分析按钮 -->
+        <ImageButton
+            android:id="@+id/btnStatistics"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_chart"
+            android:contentDescription="统计分析"
+            android:padding="10dp"
+            app:tint="#FF424242" />
+
+        <!-- 导出按钮 -->
+        <ImageButton
+            android:id="@+id/btnExport"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_export"
+            android:contentDescription="导出数据"
+            android:padding="10dp"
+            app:tint="#FF424242" />
+
+    </LinearLayout>
+
+    <!-- 主内容区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="80dp">
+
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="健康时钟"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FF212121"
+            android:layout_marginBottom="32dp" />
+
+        <!-- 时钟容器 -->
+        <FrameLayout
+            android:id="@+id/clockContainer"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/circle_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <!-- 自定义圆盘时钟 -->
+            <com.example.timedisplay.ClockView
+                android:id="@+id/clockView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- 中心点击提示 -->
+            <TextView
+                android:id="@+id/tvClickHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="点击记录"
+                android:textSize="12sp"
+                android:textColor="#FF757575"
+                android:layout_marginTop="60dp" />
+
+        </FrameLayout>
+
+        <!-- 当前选中类别显示 -->
+        <TextView
+            android:id="@+id/tvCurrentCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前: 饮食记录"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/diet_primary"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 最近记录提示 -->
+        <TextView
+            android:id="@+id/tvLastRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击时钟开始记录"
+            android:textSize="14sp"
+            android:textColor="#FF757575"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- 底部导航栏 -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFFFF"
+        android:elevation="8dp"
+        app:itemIconTint="@color/bottom_nav_selector"
+        app:itemTextColor="@color/bottom_nav_selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

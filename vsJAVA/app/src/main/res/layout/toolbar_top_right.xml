@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <!-- 主题切换按钮 -->
+    <ImageButton
+        android:id="@+id/btnTheme"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_theme"
+        android:contentDescription="切换主题"
+        android:padding="8dp"
+        app:tint="?attr/colorOnSurface" />
+
+    <!-- 统计分析按钮 -->
+    <ImageButton
+        android:id="@+id/btnStatistics"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_chart"
+        android:contentDescription="统计分析"
+        android:padding="8dp"
+        app:tint="?attr/colorOnSurface" />
+
+    <!-- 导出按钮 -->
+    <ImageButton
+        android:id="@+id/btnExport"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_export"
+        android:contentDescription="导出数据"
+        android:padding="8dp"
+        app:tint="?attr/colorOnSurface" />
+
+</LinearLayout>

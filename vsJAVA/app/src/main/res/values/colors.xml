@@ -7,4 +7,32 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- 饮食主题色 - 温暖的橙色 -->
+    <color name="diet_primary">#FF8C42</color>
+    <color name="diet_primary_dark">#E56A2E</color>
+    <color name="diet_primary_light">#FFB07A</color>
+    <color name="diet_accent">#FF6B35</color>
+
+    <!-- 运动主题色 - 活力的绿色 -->
+    <color name="exercise_primary">#4CAF50</color>
+    <color name="exercise_primary_dark">#388E3C</color>
+    <color name="exercise_primary_light">#81C784</color>
+    <color name="exercise_accent">#2E7D32</color>
+
+    <!-- 作息主题色 - 宁静的蓝色 -->
+    <color name="sleep_primary">#5C6BC0</color>
+    <color name="sleep_primary_dark">#3949AB</color>
+    <color name="sleep_primary_light">#8E99A3</color>
+    <color name="sleep_accent">#3F51B5</color>
+
+    <!-- 时钟背景色 -->
+    <color name="clock_background_diet">#FFF3E0</color>
+    <color name="clock_background_exercise">#E8F5E9</color>
+    <color name="clock_background_sleep">#E8EAF6</color>
+
+    <!-- 文字颜色 -->
+    <color name="text_primary">#FF212121</color>
+    <color name="text_secondary">#FF757575</color>
+    <color name="text_hint">#FF9E9E9E</color>
 </resources>

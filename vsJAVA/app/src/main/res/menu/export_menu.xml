@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/export_pdf"
+        android:title="导出为PDF" />
+    <item
+        android:id="@+id/export_image"
+        android:title="导出为图片" />
+</menu>
